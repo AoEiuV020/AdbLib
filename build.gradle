@@ -81,6 +81,4 @@ publish {
         dryRun = true
     }
 }
-// 删除bintray-release插件自带的javadocJar和sourceJar任务，
-// 因为不支持kotlin, 不支持安卓，
 publishToMavenLocal.dependsOn('assemble')
